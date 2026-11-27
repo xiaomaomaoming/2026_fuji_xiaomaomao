@@ -794,15 +794,15 @@ a{color:var(--fuji-deep);text-decoration:none}
       <table class="guide-table stay-table">
         <thead><tr><th>日期</th><th>住宿</th><th>新台幣</th><th>日圓</th></tr></thead>
         <tbody>
-          <tr><td>12/12<br>D1</td><td>靜岡｜三交旅館</td><td>—</td><td>—</td></tr>
-          <tr><td>12/13<br>D2</td><td>靜岡｜Garden Square Shizuoka</td><td>NT$1,565</td><td><span class="amount-original" title="原始訂房金額">¥7,548</span></td></tr>
-          <tr><td>12/14–16<br>D3–D5</td><td>河口湖｜湖龍飯店（3 晚）</td><td>NT$12,598</td><td><span class="amount-original" title="原始訂房金額">¥60,771</span></td></tr>
-          <tr><td>12/17<br>D6</td><td>箱根｜箱根小湧園飯店</td><td><span class="amount-original" title="原始訂房金額">NT$5,440</span></td><td>¥26,242</td></tr>
-          <tr><td>12/18<br>D7</td><td>箱根｜圍爐天幕（含晚餐）</td><td>NT$2,411</td><td><span class="amount-original" title="原始訂房金額">¥11,631</span></td></tr>
-          <tr><td>12/19<br>D8</td><td>伊東｜綠風園</td><td><span class="amount-original" title="原始訂房金額">NT$2,831</span></td><td>¥13,657</td></tr>
-          <tr><td>12/20<br>D9</td><td>東京｜華盛頓東京有明</td><td>NT$2,950</td><td><span class="amount-original" title="原始訂房金額">¥14,232</span></td></tr>
+          <tr><td>12/12<br>D1</td><td>靜岡｜(未訂)三交旅館</td><td>—</td><td>—</td></tr>
+          <tr><td>12/13<br>D2</td><td>靜岡｜三交旅館(無早餐)</td><td>NT$886</td><td><span class="amount-original" title="原始訂房金額">¥4,181</span></td></tr>
+          <tr><td>12/14–16<br>D3–D5</td><td>河口湖｜湖龍飯店（3 晚、含早餐）</td><td>NT$12,598</td><td><span class="amount-original" title="原始訂房金額">¥57,225</span></td></tr>
+          <tr><td>12/17<br>D6</td><td>箱根｜箱根小湧園飯店（早、晚餐）</td><td><span class="amount-original" title="原始訂房金額">NT$5,440</span></td><td>¥26,242</td></tr>
+          <tr><td>12/18<br>D7</td><td>箱根｜圍爐天幕（預定晚餐）</td><td>NT$2,411</td><td><span class="amount-original" title="原始訂房金額">¥11,631</span></td></tr>
+          <tr><td>12/19<br>D8</td><td>伊東｜綠風園（含早餐）</td><td><span class="amount-original" title="原始訂房金額">NT$2,831</span></td><td>¥13,657</td></tr>
+          <tr><td>12/20<br>D9</td><td>東京｜華盛頓東京有明(含海鮮早餐)</td><td>NT$2,950</td><td><span class="amount-original" title="原始訂房金額">¥13,665</span></td></tr>
         </tbody>
-        <tfoot><tr><td colspan="2"><b>已知金額合計（不含 D1）</b></td><td><b>NT$27,795</b></td><td><b>約 ¥134,081</b></td></tr></tfoot>
+        <tfoot><tr><td colspan="2"><b>已知金額合計（不含 D1）</b></td><td><b>NT$26,601</b></td><td><b>約 ¥126,601</b></td></tr></tfoot>
       </table>
     </div>
     <p class="stay-rate-note">匯率估算採 2026/11/26 參考匯率 1 JPY ≈ NT$0.2073（1 TWD ≈ ¥4.824）；僅供比較，非實際刷卡或換匯金額。金額以你先前提供的訂房紀錄為準，未提供的 D1 不納入合計。</p>
@@ -1205,12 +1205,12 @@ const ITINERARY_DATA = [
     ],
     summary: "上午前往漁港小鎮燒津體驗傳統稻草炙燒鰹魚與海鮮燒烤，下午走訪清水魚市場與世界遺產三保松原眺望富士山。",
     hotel: {
-      name: "Garden Square Shizuoka（靜岡花園廣場飯店）",
-      img: PHOTOS.hotelGardenSquare,
-      price: "¥7,548",
-      address: "靜岡縣靜岡市葵區紺屋町 11-1",
-      note: "位於靜岡市中心，晚餐後返回入住。",
-      mapQuery: "ガーデンスクエア静岡"
+      name: "三交旅館 靜岡北口（Sanco Inn Shizuoka Kitaguchi）",
+      img: PHOTOS.hotelShizuoka,
+      price: "¥4,181 (無早餐)",
+      address: "靜岡縣靜岡市葵區常磐町 1-6-3（JR 靜岡站北口步行區）",
+      note: "15:00～18:00提供美味小點心、17:00-21:00提供一杯免費酒精以及靜岡煎茶。",
+      mapQuery: "三交イン静岡北口"
     },
     steps: [
       {
@@ -1301,7 +1301,7 @@ const ITINERARY_DATA = [
         badge: "靜岡名物晚餐", badgeClass: "food",
         title: "晚餐｜炭焼きレストラン さわやか",
         img: PHOTOS.hamburgDinner,
-        desc: "晚餐安排靜岡人氣炭燒漢堡排「さわやか」，招牌為げんこつハンバーグ。依當晚回程路線及現場候位狀況選店，用餐後返回 Garden Square Shizuoka 入住。",
+        desc: "晚餐安排靜岡人氣炭燒漢堡排「さわやか」，招牌為げんこつハンバーグ。依當晚回程路線及現場候位狀況選店，用餐後返回 三交旅館 入住。",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=炭焼きレストラン+さわやか+静岡市"
       }
     ],
@@ -1378,7 +1378,7 @@ const ITINERARY_DATA = [
     hotel: {
       name: "湖龍飯店（Hotel Koryu / 河口湖溫泉）",
       img: PHOTOS.kawaguchikoHotel,
-      price: "¥60,771（12/14–12/16 共 3 晚總價）",
+      price: "¥57,225（12/14–12/16 共 3 晚總價）",
       address: "山梨縣南都留郡富士河口湖町淺川 630-1",
       note: "傍晚抵達河口湖後前往入住，連續入住三晚。館內設施可留意：展望大浴場與露天風呂、桑拿、休息區、餐廳／早餐會場、伴手禮商店及免費接駁服務；設施開放時段、餐食供應與維修狀況以入住當日飯店公告為準。",
       mapQuery: "河口湖 ホテル湖龍"
@@ -1449,7 +1449,7 @@ const ITINERARY_DATA = [
         kind: "spot", time: "傍晚", badge: "連住三晚", badgeClass: "hotel",
         title: "入住｜河口湖 湖龍飯店",
         img: PHOTOS.kawaguchikoHotel,
-        desc: "抵達河口湖站後前往湖畔「湖龍飯店」辦理入住（¥60,771／3 晚）。",
+        desc: "抵達河口湖站後前往湖畔「湖龍飯店」辦理入住（¥57,225／3 晚）。",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=河口湖+ホテル湖龍"
       }
     ],
@@ -1500,7 +1500,7 @@ const ITINERARY_DATA = [
     hotel: {
       name: "湖龍飯店（Hotel Koryu）",
       img: PHOTOS.kawaguchikoHotel,
-      price: "已含於 D3 總價（¥60,771／3 晚）",
+      price: "已含於 D3 總價（¥57,225／3 晚）",
       address: "山梨縣南都留郡富士河口湖町淺川 630-1",
       note: "續住第二晚。可使用展望大浴場、露天風呂與桑拿，並留意館內休息空間、餐廳／早餐會場、伴手禮商店及免費接駁服務；設施開放時段、餐食供應與維修狀況以入住當日飯店公告為準。",
       mapQuery: "河口湖 ホテル湖龍"
@@ -1618,7 +1618,7 @@ const ITINERARY_DATA = [
     hotel: {
       name: "湖龍飯店（Hotel Koryu）",
       img: PHOTOS.kawaguchikoHotel,
-      price: "已含於 D3 總價（¥60,771／3 晚）",
+      price: "已含於 D3 總價（¥57,225／3 晚）",
       address: "山梨縣南都留郡富士河口湖町淺川 630-1",
       note: "河口湖最後一晚，晚間可使用展望大浴場、露天風呂與桑拿放鬆，並利用休息空間、餐廳／早餐會場及商店；各設施開放時段與餐食供應以飯店公告為準。建議整理隔日前往御殿場與箱根的行李。",
       mapQuery: "河口湖 ホテル湖龍"
@@ -2151,7 +2151,7 @@ const ITINERARY_DATA = [
     hotel: {
       name: "華盛頓東京有明（Tokyo Bay Ariake Washington Hotel）",
       img: PHOTOS.hotelAriake,
-      price: "¥14,232",
+      price: "¥13,665",
       address: "東京都江東區有明 3-7-11",
       note: "鄰近國際展示場站／有明站，隔日前往羽田機場交通便利。",
       mapQuery: "東京ベイ有明ワシントンホテル"
@@ -2206,7 +2206,7 @@ const ITINERARY_DATA = [
         kind: "spot", time: "晚上", badge: "彈性冬夜", badgeClass: "food",
         title: "入住華盛頓東京有明・東京聖誕市集 2026（新豐洲，視體力）",
         img: PHOTOS.tokyoXmas,
-        desc: "辦理飯店入住（¥14,232）。新豐洲會場的東京聖誕市集 2026 預定 11/21–12/25 舉行，營業時間 11:00–21:30、最晚入場 20:30；12/20 為週日，成人票價依週末票種約 ¥1,500。從伊豆回東京後仍須看抵達時間與體力，若可能趕不上 20:30 入場就直接回飯店休息。",
+        desc: "辦理飯店入住（¥13,665）。新豐洲會場的東京聖誕市集 2026 預定 11/21–12/25 舉行，營業時間 11:00–21:30、最晚入場 20:30；12/20 為週日，成人票價依週末票種約 ¥1,500。從伊豆回東京後仍須看抵達時間與體力，若可能趕不上 20:30 入場就直接回飯店休息。",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=東京ベイ有明ワシントンホテル"
       }
     ],
@@ -2602,7 +2602,7 @@ const DAY_MAP_POINTS = {
     {name:"清水站（巴士上車處）",lat:35.0218,lng:138.4874},
     {name:"清水魚市場 河岸之市",lat:35.0202,lng:138.4905},
     {name:"三保松原",lat:35.0175,lng:138.5268},
-    {name:"Garden Square Shizuoka",lat:34.9732,lng:138.3867}
+    {name:"三交旅館靜岡北口",lat:34.9732,lng:138.3867}
   ],
   3: [
     {name:"JR 靜岡站",lat:34.9717,lng:138.3889},
